@@ -77,7 +77,10 @@ class VideoPage extends Component {
 			
 			this.setState({
 				video: {
-					...video,
+					title: this.state.title,
+					category: this.state.category,
+					artist: this.state.artist,
+					votes: this.state.votes,
 					comments: this.state.video.comments.concat(json)
 				},
 				comments: ''
